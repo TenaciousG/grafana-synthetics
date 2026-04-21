@@ -15,7 +15,6 @@ resource "grafana_synthetic_monitoring_check" "Synthetics_BrowserCheck_login" {
   }
 }
 
-
 resource "grafana_synthetic_monitoring_check" "Synthetics_HttpCheck" {
   job       = "Synthetics:HttpCheck"
   target    = "http"
