@@ -1,6 +1,7 @@
 import { group, sleep, check } from "k6";
 import http from "k6/http";
 
+
 export default function () {
   let params;
   let resp;
