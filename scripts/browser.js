@@ -17,6 +17,7 @@ export const options = {
   },
 };
 
+
 export default async function () {
   const context = await browser.newContext();
   const page = await context.newPage();
