@@ -10,7 +10,7 @@ resource "grafana_rule_group" "synthetic_monitoring_alerts" {
   folder_uid       = grafana_folder.synthetic_monitoring_alerts.uid
   interval_seconds = 60
 
-    rule {
+  rule {
     name      = "SyntheticCheckFailing"
     condition = "C"
 
@@ -79,7 +79,7 @@ resource "grafana_rule_group" "synthetic_monitoring_alerts" {
     }
   }
 
-    rule {
+  rule {
     name      = "SyntheticCheckDegraded"
     condition = "C"
 
@@ -148,7 +148,7 @@ resource "grafana_rule_group" "synthetic_monitoring_alerts" {
     }
   }
 
-    rule {
+  rule {
     name      = "HighSyntheticCheckLatency"
     condition = "C"
 
@@ -217,7 +217,7 @@ resource "grafana_rule_group" "synthetic_monitoring_alerts" {
     }
   }
 
-    rule {
+  rule {
     name      = "MultipleSyntheticChecksFailing"
     condition = "C"
 
@@ -286,7 +286,7 @@ resource "grafana_rule_group" "synthetic_monitoring_alerts" {
     }
   }
 
-    rule {
+  rule {
     name      = "SyntheticCheckHttp5xxErrors"
     condition = "C"
 
